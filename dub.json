@@ -1,0 +1,19 @@
+{
+    "name": "mini3dfps",
+    "description": "A tiny cross-platform 3D FPS written in D (GLFW + OpenGL 3.3)",
+    "authors": ["mini3dfps"],
+    "copyright": "Copyright (c) 2026",
+    "license": "MIT",
+    "targetType": "executable",
+    "sourcePaths": ["source"],
+    "versions": ["GLFW_32", "GL_33"],
+    "dependencies": {
+        "bindbc-glfw": "~>1.0.0",
+        "bindbc-opengl": "~>1.0.0"
+    },
+    "buildTypes": {
+        "release": {
+            "dflags": ["-O", "-release", "-inline", "-boundscheck=off"]
+        }
+    }
+}
